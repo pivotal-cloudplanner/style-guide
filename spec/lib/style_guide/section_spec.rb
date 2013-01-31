@@ -40,7 +40,7 @@ describe StyleGuide::Section do
 
     context "with multiple paths having the same basename" do
       let(:paths) { ["/neck/wattle", "/underarm/wattle"] }
-      
+
       it { should =~ ["wattle", "wattle1"] }
     end
   end
