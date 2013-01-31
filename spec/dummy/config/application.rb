@@ -8,6 +8,7 @@ require "sprockets/railtie"
 
 Bundler.require :default, Rails.env
 require "style_guide"
+require "style_guide/form_helpers"
 
 module Dummy
   class Application < Rails::Application
@@ -29,4 +30,3 @@ module Dummy
     config.style_guide.paths << Rails.root.join("app/views/style-guide/**/*")
   end
 end
-
