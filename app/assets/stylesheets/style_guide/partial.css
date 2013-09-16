@@ -61,6 +61,22 @@
   border: 1px solid #f5f5f5;
 }
 
+.style-guide-partial-rendered.iphone-portrait {
+  max-width: 320px;
+}
+
+.style-guide-partial-rendered.iphone-landscape {
+  max-width: 568px;
+}
+
+.style-guide-partial-rendered.ipad-portrait {
+  max-width: 768px;
+}
+
+.style-guide-partial-rendered.ipad-landscape {
+  max-width: 1024px;
+}
+
 .style-guide-partial-rendered + .style-guide-identifiers {
   border-top-width: 0;
 }
@@ -86,8 +102,20 @@
   padding: 0 5px;
 }
 
-.style-guide-partial-rendered:after {
-  content: "Example";
+.style-guide-partial-rendered.iphone-portrait:after {
+  content: "iPhone Portrait";
+}
+
+.style-guide-partial-rendered.iphone-landscape:after {
+  content: "iPhone Landscape";
+}
+
+.style-guide-partial-rendered.ipad-portrait:after {
+  content: "iPad Portrait";
+}
+
+.style-guide-partial-rendered.ipad-landscape:after {
+  content: "iPad Landscape";
 }
 
 .style-guide-partial-identifiers:after {
