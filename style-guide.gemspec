@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 4.0"
   s.add_dependency "nokogiri", "~> 1.6"
   s.add_dependency "github-markdown", "~> 0.5"
+  s.add_dependency "activeresource"
 
   # super-relevant in development, but super-irrelevant in staging
   s.add_development_dependency "rack-livereload"
