@@ -32,7 +32,7 @@ describe StyleGuide::StyleController do
       assigns(:sections).first.should be_a StyleGuide::Section
     end
 
-    it "assigns the section" do
+    it "assigns the current section" do
       get :show, id: "monkey_hammer", use_route: :styles
       assigns(:current_section).should be_a StyleGuide::Section
       assigns(:current_section).title.should == "Monkey Hammer"
