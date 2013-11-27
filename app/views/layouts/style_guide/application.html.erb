@@ -9,7 +9,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 
-    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%- @config.css_urls.each do |url| %>
+      <%= stylesheet_link_tag url, :media => "all" %>
+    <%- end %>
+    <%- @config.js_urls.each do |url| %>
+      <%= javascript_include_tag url %>
+    <%- end %>
     <%= stylesheet_link_tag    "style_guide/application", :media => "all" %>
     <%= csrf_meta_tags %>
   </head>
@@ -29,9 +34,12 @@
       </div>
     </div>
 
-<%= yield %>
+    <div class="content-container">
+      <div class="container">
+        <%= yield %>
+      <div>
+    <div>
 
-    <%= javascript_include_tag "application" %>
     <%= javascript_include_tag "style_guide/application" %>
   </body>
 </html>

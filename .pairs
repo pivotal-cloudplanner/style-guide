@@ -1,12 +1,10 @@
-# This file is managed by chef! Override node.default["git_pairs_authors"] in attributes/git_pairs.rb to modify.
-
 pairs:
-  dr: Doc Ritezel; doc
-  oa: Ofri Afek; ofri
-  cbg: Can Berk Güder; cbguder
-
+  bk: Brian Kelly; bkelly
+  ms: Michael Schubert; schubert
+  rr: Rick Reilly; rreilly
+  gp: Geoff Pleiss; geoff
+  ra: Rasheed Abdul-Aziz; squeedee
+  dd: David Dening; daviddening
 email:
   prefix: pair
   domain: pivotallabs.com
-
-global: true
