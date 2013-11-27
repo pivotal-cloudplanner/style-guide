@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/nertzy/informal.git
+  revision: 6cf7ad4127bd929015f02e8c73c950d544e04ff3
+  branch: active-record-4
+  specs:
+    informal (0.1.0)
+      activemodel (>= 3.0)
+
 PATH
   remote: .
   specs:
@@ -66,8 +74,6 @@ GEM
       rspec (~> 2.11)
     hike (1.2.1)
     i18n (0.6.1)
-    informal (0.1.0)
-      activemodel (~> 3.0)
     journey (1.0.4)
     json (1.7.6)
     listen (0.7.2)
@@ -151,7 +157,7 @@ DEPENDENCIES
   guard-bundler
   guard-livereload
   guard-rspec
-  informal
+  informal!
   rack-livereload
   rb-fsevent
   rspec-rails
