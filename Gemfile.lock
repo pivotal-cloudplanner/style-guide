@@ -66,6 +66,8 @@ GEM
       rspec (~> 2.11)
     hike (1.2.1)
     i18n (0.6.1)
+    informal (0.1.0)
+      activemodel (~> 3.0)
     journey (1.0.4)
     json (1.7.6)
     listen (0.7.2)
@@ -149,6 +151,7 @@ DEPENDENCIES
   guard-bundler
   guard-livereload
   guard-rspec
+  informal
   rack-livereload
   rb-fsevent
   rspec-rails
