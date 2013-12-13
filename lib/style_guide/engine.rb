@@ -9,5 +9,9 @@ module StyleGuide
     config.style_guide = StyleGuide::Config.new
     config.i18n.load_path += Dir.glob(StyleGuide::Engine.root.join('config', 'locales', '*.{rb,yml}').to_s)
     config.i18n.default_locale = :en
+
+    initializer "assets.paths.style_guide" do |app|
+      app.config.assets.paths << File.expand_path(File.join("..", "..", "app", "assets"))
+    end
   end
 end
