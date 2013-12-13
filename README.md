@@ -22,10 +22,6 @@ Anti-Features
 * Not a linting tool: no warnings or errors are displayed
 * Curated, not magic: providing fake data for partials is not covered
 
-Changes in Zephyr's implementation
-----------------------------------
-* Is a layout guide - sections that contain pages (not partials) which demonstrate composed views = "Components" (not done)
-* Supports seperate pipelines - we have a vendor.css and vendor.js, so we can configure these (js not done)
 
 Example
 -------
